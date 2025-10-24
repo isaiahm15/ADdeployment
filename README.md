@@ -43,7 +43,7 @@ Note: Be sure to direct your Windows OS VM to the same virtual network as your s
 
 <h2 align="center">Configure Private IP Address & DNS Settings</h2>
 
-<p align="center"> Return to Azure and set the virtual server's private IP address to static. <br>This will avoid connectivity issues and prepare for the virtual Windows OS client to connect to the Active Directory.<br/>
+<p align="center"> Return to Azure and set the virtual server's private IP address to static. <br>This will prepare the virtual Windows OS client to connect to Active Directory.<br/>
 <img src="https://github.com/user-attachments/assets/c534f0cd-20c3-4bd3-a8ea-d04daae58e06" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -81,6 +81,9 @@ Note: Be sure to direct your Windows OS VM to the same virtual network as your s
  
  <p align="center"> <i>Right click Windows icon > System > Rename My Pc (advanced) > Computer Name > Change > Member Of, Domain:</i>
  <br/>
+   <p align="center"><i>(You will need the sign-in information from your virtual server client to finalize this.)</i><br/>
+<br />
+<br />
 <img src="https://github.com/user-attachments/assets/1ad058bf-e16c-4128-8c36-c7dac316ec45" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
