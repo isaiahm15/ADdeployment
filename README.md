@@ -48,7 +48,8 @@ Note: Be sure to direct your Windows OS VM to the same virtual network as your s
 <br />
 
 <h2 align="center">Installing the domain server</h2>
-<p align="center"> Click on the flag icon in the top right and promote the server to a domain controller. <br/>
+<p align="center">
+ Click on the flag icon in the top right and promote the server to a domain controller. <br/>
 <img src="https://github.com/user-attachments/assets/030697fe-f7ae-40a4-89ad-93e84f83e7ff" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -58,7 +59,9 @@ Note: Be sure to direct your Windows OS VM to the same virtual network as your s
 <br />
 <br />
 
-<p align="center"> Launch Active Directory to confirm proper installation. <i>(We optionally created folders (Organizational Units) to organize clients, administrators, or groups.)</i><br/>
+<p align="center"> Launch Active Directory to confirm proper installation.<br/>
+<p align="center">
+ <i>(We optionally created folders (Organizational Units) to organize clients, administrators, or groups.)</i>
 <img src="https://github.com/user-attachments/assets/76f4ec07-4828-4e1f-b4ce-3432b867314e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
