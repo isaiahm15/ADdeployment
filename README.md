@@ -4,7 +4,7 @@
 <a href="https://github.com/user-attachments/assets/58f5815e-7a62-46cb-8aa6-e12bb01f6ccc" target="blank"><img align="middle" src="https://github.com/user-attachments/assets/58f5815e-7a62-46cb-8aa6-e12bb01f6ccc" alt="gmail" height="400" width="400" /></a>
 </h1>
 
-This lab guides you through how to deploy AD (Active Directory) using a virtual windows server and operating system through Azure, and how you can then connect clients to it. AD will provide you the means to organize and manage users or devices connected to its network. Some practical examples include user login management, creating separate domain groups by department for instance, and provisioning configurable access/permission levels for them.
+This lab guides you through how to deploy AD (Active Directory) using a virtual windows server and operating system through Azure, and how you can then connect clients to it. AD will provide you the means to organize and manage users or devices connected to its network. Some practical examples include user login management, creating separate domain groups by department, and provisioning configurable access/permission levels for them.
 <br/>
 
 
