@@ -40,7 +40,19 @@ Note: Be sure to direct your Windows OS VM to the same virtual network as your s
 <img src="https://github.com/user-attachments/assets/9bcf9d71-3213-4556-a14e-62121b533727" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
- 
+
+<h2 align="center">Deploy Windows Virtual Server & OS</h2>
+
+<p align="center"> Return to Azure and set the virtual server's private IP address to static. This will avoid connectivity issues and prepare for the virtual Windows OS client to connect to the Active Directory.<br/>
+<img src="https://github.com/user-attachments/assets/32808a2d-1504-4cec-a0b0-635060f43ef5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<p align="center"> Navigate to the Windows client VM, access network settings and customize the DNS server to the private IP address of virtual server client.<br/>
+<img src="https://github.com/user-attachments/assets/d965778d-2f5f-4ac4-a513-bfe55502e4c4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
 <h2 align="center">Installing Active Directory</h2>
 <p align="center"> Install ADDS (Active Directory Domain Services) in Server Manager from your virtual server.<br/>
 <img src="https://github.com/user-attachments/assets/e8ca9648-a0f2-412e-92a3-d8d513c28be4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
