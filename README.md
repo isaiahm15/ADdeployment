@@ -50,7 +50,7 @@ Note: Be sure to direct your Windows OS VM to the same virtual network as your s
 <h2 align="center">Installing the domain server</h2>
 <p align="center">
  Click on the flag icon in the top right and promote the server to a domain controller. <br/>
-<img src="https://github.com/user-attachments/assets/030697fe-f7ae-40a4-89ad-93e84f83e7ff" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/488d036b-2df8-4bc6-836e-4e58f6f7fc7d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
