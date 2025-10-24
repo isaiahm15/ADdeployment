@@ -68,7 +68,7 @@ Note: Be sure to direct your Windows OS VM to the same virtual network as your s
 
 <p align="center"> Switch to virtual Windows OS client and make it a member of your newly created forest domain.
  
- <p align="center"> <i>Right click Windows icon > System > Computer Name > Change > Member Of, Domain:</i>
+ <p align="center"> <i>Right click Windows icon > System > Rename My Pc (advanced) > Computer Name > Change > Member Of, Domain:</i>
  <br/>
 <img src="https://github.com/user-attachments/assets/1ad058bf-e16c-4128-8c36-c7dac316ec45" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
