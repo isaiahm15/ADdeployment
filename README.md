@@ -101,8 +101,8 @@ Create a resource group within Azure. This will be used to store both virtual ma
 <p align="center"> Add a new forest domain and create a password for the DSRM.
 <br><i>Settings and options after this were left at their default values. You can proceed to the installation page and finalize the DC setup.</i></br>
 <br>
-<img src="https://github.com/user-attachments/assets/98248b03-c790-4241-8304-718f3aced9b8" height="100%" width="49.93%">
-<img src="https://github.com/user-attachments/assets/6e46f8e3-d71d-4d94-83f4-59f41e1c1e62" height="100%" width="49.56%">
+<img src="https://github.com/user-attachments/assets/98248b03-c790-4241-8304-718f3aced9b8" height="100%" width="43.93%">
+<img src="https://github.com/user-attachments/assets/6e46f8e3-d71d-4d94-83f4-59f41e1c1e62" height="100%" width="43.56%">
 
 </p></br>
 
