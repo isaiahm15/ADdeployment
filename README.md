@@ -83,49 +83,69 @@ Create a resource group within Azure. This will be used to store both virtual ma
 <img src="https://github.com/user-attachments/assets/729fd9df-a3f5-49ec-8f31-ac37e98a829a" height="75%" width="100%" alt="Disk Sanitization Steps"/>
 <br/>
 
-<p> Navigate to the Windows client VM, access network settings, and customize the DNS server to the private IP address of the virtual server client.<br/>
+<p> Navigate to the Windows client VM, access its network interface settings, and customize the DNS server to the private IP address of the virtual server client.<br/>
 <img src="https://github.com/user-attachments/assets/b416c88a-7a65-4805-96f7-7797aea7adf5" height="80%" width="100%" alt="Disk Sanitization Steps"/>
 <br/>
 
-<h2>Installing Active Directory</h2>
+<h2 align="center">Active Directory Installation & Setup</h2>
+
 <p> Install ADDS (Active Directory Domain Services) in Server Manager from your virtual server.<br/>
-<img src="https://github.com/user-attachments/assets/e8ca9648-a0f2-412e-92a3-d8d513c28be4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+<img src="https://github.com/user-attachments/assets/f108603f-462b-4a5e-bb7f-84ceba75cea8" height="80%" width="100%" alt="Disk Sanitization Steps"/>
+<br/>
 
-<h2>Installing the domain server</h2>
-<p>
- Click on the flag icon in the top right and promote the server to a domain controller. <br/>
-<img src="https://github.com/user-attachments/assets/488d036b-2df8-4bc6-836e-4e58f6f7fc7d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+<p> Once ADDS is installed, click on "Promote this server to a domain controller".<br/>
+<img src="https://github.com/user-attachments/assets/5c8c3099-fb5c-47f6-b793-23d27ded48ea" height="80%" width="100%" alt="Disk Sanitization Steps"/>
+<br/>
 
-<p> Create or specify a domain name. For this lab, we added a new forest. Click through the following fields and finalize the controller installation!<br/>
-<img src="https://github.com/user-attachments/assets/64b6f2fb-390e-4969-8b5d-5200f4ad9fac" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
 
-<p> Launch Active Directory to confirm proper installation.<br/>
-<p>
- <i>(We optionally created folders (Organizational Units) to organize clients, administrators, or groups.)</i>
-<img src="https://github.com/user-attachments/assets/76f4ec07-4828-4e1f-b4ce-3432b867314e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+<p align="center"> Add a new forest domain and create a password for the DSRM.
+<br><i>Settings and options after this were left at their default values. You can proceed to the installation page and finalize the DC setup.</i></br>
+<br>
+<img src="https://github.com/user-attachments/assets/98248b03-c790-4241-8304-718f3aced9b8" height="100%" width="49.93%">
+<img src="https://github.com/user-attachments/assets/6e46f8e3-d71d-4d94-83f4-59f41e1c1e62" height="100%" width="49.56%">
 
-<p> Switch to the virtual Windows OS client and make it a member of your newly created forest domain.
- 
- <p> <i>Right click Windows icon > System > Rename My Pc (advanced) > Computer Name > Change > Member Of, Domain:</i>
- <br/>
-   <p><i>(You will need the sign-in information from your virtual server client to finalize this.)</i><br/>
-<br />
-<br />
-<img src="https://github.com/user-attachments/assets/1ad058bf-e16c-4128-8c36-c7dac316ec45" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+</p></br>
 
-<p> Return to the virtual server client, launch Active Directory, and confirm your added member client exists within the database.<br/>
-<img src="https://github.com/user-attachments/assets/14b67382-c8bf-45a3-8d8c-23c1c6ec15b9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+<p> Take a moment to restart both VMs to ensure Active Directory is in place.
+<br/>
+<img src="https://github.com/user-attachments/assets/ec465951-b745-4036-971a-2e611669f55a" height="80%" width="100%"/>
+<br/>
+
+<h2 align="center">Adding Windows 10 client to Active Directory</h2>
+
+<p align="center"> Log into the Windows 10 client and right-click the Windows icon at the bottom left on the desktop, then click on System.
+<br><i>Once the System settings opens, click on "Rename this PC (advanced)"</i></br>
+<br>
+<img align="center" src="https://github.com/user-attachments/assets/db77a348-647b-4ae3-8b01-0a754bed0d58" height="100%" width="35%">
+<img align="center" src="https://github.com/user-attachments/assets/c1968ffc-fb4c-44ef-bf29-15f76746af8d" height="100%" width="58%">
+
+</p></br>
+
+<p align="center"> In System Properties, click on "Change" and then "Domain"
+<br><i>(Right Image) Here, you should enter the forest domain you created earlier.</i></br>
+
+<br>
+<img align="center" src="https://github.com/user-attachments/assets/d41d9228-ad96-4122-9fe4-7035ea23a93a" height="100%" width="42.85%">
+<img align="center" src="https://github.com/user-attachments/assets/12dee7b5-9654-4160-a0b4-1d3ac4e388fd" height="100%" width="43%">
+
+</p></br>
+
+<p align="center"> Your Windows client is now connected to the Active Directory.
+<br><i>Make sure to have your domain client login information, you will need to authorize this domain change!</i></br>
+
+<br>
+<img align="center" src="https://github.com/user-attachments/assets/a66a2f63-fa7a-4331-bcea-0090e1fefce7" height="100%" width="42.85%">
+<img align="center" src="https://github.com/user-attachments/assets/27ed838a-6b52-4a25-a30e-55d2308c5626" height="100%" width="53.25%">
+
+</p></br>
+
+<p>Use your domain client to launch Active Directory Users & Computers. Confirm that your added member client exists within the database.<br/>
+ <br><i>This will be located in the "Computers" folder within your domain.</i></br>
+<img src="https://github.com/user-attachments/assets/927d9c7e-6010-4600-b126-626d18c22277" height="80%" width="100%"/>
+<br/>
+
+<p>Once you're all set up, you can optionally create OUs (Organizational Units) to sort different departments from each other within your domain directory. Some typical uses for these are when you create domain groups and users, where you can then begin to configure a variety of permissions within each group and provision access among them.</p>
+
 
 <!--
  ```diff
